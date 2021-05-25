@@ -30,7 +30,7 @@ postClienteR = do
             runDB $ insert cliente
             setMessage [shamlet|
                 <div>
-                    PARABÉNS, VOCÊ FOI CADASTRADO NA NEWSFEED!
+                    CLIENTE CADASTRADO COM SUCESSO!
             |]
             redirect ClienteR
         _ -> redirect HomeR

@@ -1,17 +1,17 @@
 <img src=@{StaticR img_5_jpg}>
 
 <h1>
-    Comercio de produtos LJP
+    COMÉRCIO DO PRODUTOS LJP
     
     <ul>
         <li>
-            <a href="/clientes">
-                Consulta de clientes
+            <a href=@{ListaCliR}>
+                Consulta de Clientes
         <li>
-            <a href="/produtos">
+            <a href=@{ListaProR}>
                 Consulta de Produtos
         <li>
-            <a href="/vendas">
+            <a href=@{ListaVendR}>
                 Consulta de Vendas
         <li>
             <a href=@{ClienteR}>

@@ -29,12 +29,12 @@ version :: Version
 version = Version [0,0,0] []
 bindir, libdir, dynlibdir, datadir, libexecdir, sysconfdir :: FilePath
 
-bindir     = "C:\\Users\\josepetri\\documents\\github\\haskell\\.stack-work\\install\\685340ec\\bin"
-libdir     = "C:\\Users\\josepetri\\documents\\github\\haskell\\.stack-work\\install\\685340ec\\lib\\x86_64-windows-ghc-8.10.4\\aulahaskell-0.0.0-8dUJhVgNUruFRoL1UyicE3"
-dynlibdir  = "C:\\Users\\josepetri\\documents\\github\\haskell\\.stack-work\\install\\685340ec\\lib\\x86_64-windows-ghc-8.10.4"
-datadir    = "C:\\Users\\josepetri\\documents\\github\\haskell\\.stack-work\\install\\685340ec\\share\\x86_64-windows-ghc-8.10.4\\aulahaskell-0.0.0"
-libexecdir = "C:\\Users\\josepetri\\documents\\github\\haskell\\.stack-work\\install\\685340ec\\libexec\\x86_64-windows-ghc-8.10.4\\aulahaskell-0.0.0"
-sysconfdir = "C:\\Users\\josepetri\\documents\\github\\haskell\\.stack-work\\install\\685340ec\\etc"
+bindir     = "C:\\Users\\josepetri\\paulo\\.stack-work\\install\\685340ec\\bin"
+libdir     = "C:\\Users\\josepetri\\paulo\\.stack-work\\install\\685340ec\\lib\\x86_64-windows-ghc-8.10.4\\aulahaskell-0.0.0-8dUJhVgNUruFRoL1UyicE3"
+dynlibdir  = "C:\\Users\\josepetri\\paulo\\.stack-work\\install\\685340ec\\lib\\x86_64-windows-ghc-8.10.4"
+datadir    = "C:\\Users\\josepetri\\paulo\\.stack-work\\install\\685340ec\\share\\x86_64-windows-ghc-8.10.4\\aulahaskell-0.0.0"
+libexecdir = "C:\\Users\\josepetri\\paulo\\.stack-work\\install\\685340ec\\libexec\\x86_64-windows-ghc-8.10.4\\aulahaskell-0.0.0"
+sysconfdir = "C:\\Users\\josepetri\\paulo\\.stack-work\\install\\685340ec\\etc"
 
 getBinDir, getLibDir, getDynLibDir, getDataDir, getLibexecDir, getSysconfDir :: IO FilePath
 getBinDir = catchIO (getEnv "aulahaskell_bindir") (\_ -> return bindir)
