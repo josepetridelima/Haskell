@@ -17,21 +17,11 @@ formVenda = renderDivs $ Venda
 
 getVendaR :: Handler Html
 getVendaR = do
-    (widget,_) <- generateFormPost formVenda 
+    (widget,_) <- generateFormPost formVenda
     msg <- getMessage
-    defaultLayout $
-        [whamlet|
-            $maybe mensa <- msg
-                <div>
-                    ^{mensa}
-
-            <h1>
-                CADASTRO DE Venda
-
-            <form method=post action=@{VendaR}>
-                ^{widget}
-                <input type="submit" value="Cadastrar">
-        |]  
+    defaultLayout $ do
+        addStylesheet (StaticR css_bootstrap_css)
+        $(whamletFile "templates/c3.hamlet") 
 
 postVendaR :: Handler Html
 postVendaR = do
@@ -41,37 +31,26 @@ postVendaR = do
             runDB $ insert venda
             setMessage [shamlet|
                 <div>
-                    Venda INCLUIDA COM SUCESSO!
+                    VENDA INCLUÍDA COM SUCESSO!
             |]
             redirect VendaR
         _ -> redirect HomeR
 
 getPerfilVendR :: VendaId -> Handler Html
-getPerfilVendR cid = do
-    venda <- runDB $ get404 cid
-    defaultLayout [whamlet|
-        <h1>
-            PAGINA DE #{vendaCliente venda}
-            
-        <h2>
-            Produto: #{vendaProduto venda}
-            
-        <h2>
-            Data: #{vendaData venda}
-
-        <h2>
-            Valor: #{vendaValor venda}
-    |]
---select * from Venda order by cliente:
+getPerfilVendR vid = do
+    venda <- runDB $ get404 vid
+    defaultLayout $ do
+        addStylesheet (StaticR css_bootstrap_css)
+        $(whamletFile "templates/perfilvenda.hamlet")
+        
 getListaVendR :: Handler Html
 getListaVendR = do
     vendas <- runDB $ selectList [] [Asc VendaCliente]
     defaultLayout $ do
+        addStylesheet (StaticR css_bootstrap_css)
         $(whamletFile "templates/vendas.hamlet")
 
 postApagarVendR :: VendaId -> Handler Html
-postApagarVendR cid = do
-    runDB $ delete cid
+postApagarVendR vid = do
+    runDB $ delete vid
     redirect ListaVendR
-        
-  

@@ -1,16 +1,18 @@
 <table>
     <thead>
-        <th>
-            Nome
-        <th>
-            Cod
-        <th>
-            Peso
-        <th>
-            Volume
-        <th>
+        <tr>
+            <th>
+                NOME
+            <th>
+                CÓDIGO
+            <th>
+                PESO
+            <th>
+                VOLUME
+            <th>
+            
     <tbody>
-        $forall Entity cid produto <- produtos
+        $forall Entity pid produto <- produtos
             <tr>
                 <td>
                     #{produtoNome produto}
@@ -21,5 +23,9 @@
                 <td>
                     #{produtoVolume produto}
                 <td>
-                    <form method=post action=@{ApagarProR cid}>
+                    <form method=post action=@{ApagarProR pid}>
                         <input type="submit" value="X">
+
+<ul>
+    <a href=@{ProdutoR}>
+        Voltar

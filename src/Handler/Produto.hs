@@ -11,28 +11,18 @@ import Import
 formProduto :: Form Produto
 formProduto = renderDivs $ Produto
     <$> areq textField "Nome: " Nothing
-    <*> areq textField "Cod: " Nothing
+    <*> areq textField "Código: " Nothing
     <*> areq intField  "Peso: " Nothing 
     <*> areq intField  "Volume: " Nothing 
 
 getProdutoR :: Handler Html
 getProdutoR = do
-    (widget,_) <- generateFormPost formProduto 
+    (widget,_) <- generateFormPost formProduto
     msg <- getMessage
-    defaultLayout $
-        [whamlet|
-            $maybe mensa <- msg
-                <div>
-                    ^{mensa}
-
-            <h1>
-                CADASTRO DE Produto
-
-            <form method=post action=@{ProdutoR}>
-                ^{widget}
-                <input type="submit" value="Cadastrar">
-        |]  
-
+    defaultLayout $ do
+        addStylesheet (StaticR css_bootstrap_css)
+        $(whamletFile "templates/c2.hamlet")
+        
 postProdutoR :: Handler Html
 postProdutoR = do
     ((result,_),_) <- runFormPost formProduto
@@ -41,37 +31,26 @@ postProdutoR = do
             runDB $ insert produto
             setMessage [shamlet|
                 <div>
-                    Produto INCLUIDO COM SUCESSO!
+                    PRODUTO INCLUÍDO COM SUCESSO!
             |]
             redirect ProdutoR
         _ -> redirect HomeR
 
 getPerfilProdR :: ProdutoId -> Handler Html
-getPerfilProdR cid = do
-    produto <- runDB $ get404 cid
-    defaultLayout [whamlet|
-        <h1>
-            PAGINA DE #{produtoNome produto}
-            
-        <h2>
-            Cod: #{produtoCod produto}
-            
-        <h2>
-            Peso: #{produtoPeso produto}
-
-        <h2>
-            Volume: #{produtoVolume produto}
-    |]
---select * from Produto order by nome:
+getPerfilProdR pid = do
+    produto <- runDB $ get404 pid
+    defaultLayout $ do
+        addStylesheet (StaticR css_bootstrap_css)
+        $(whamletFile "templates/perfilprod.hamlet")
+    
 getListaProR :: Handler Html
 getListaProR = do
     produtos <- runDB $ selectList [] [Asc ProdutoNome]
     defaultLayout $ do
+        addStylesheet (StaticR css_bootstrap_css)
         $(whamletFile "templates/produtos.hamlet")
 
 postApagarProR :: ProdutoId -> Handler Html
-postApagarProR cid = do
-    runDB $ delete cid
+postApagarProR pid = do
+    runDB $ delete pid
     redirect ListaProR
-        
-  

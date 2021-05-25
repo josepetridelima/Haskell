@@ -1,8 +1,7 @@
 Cliente
     nome Text
+    email Text
     cpf Text
-    idade Int
-    endereco Text
     deriving Show
 
 Produto

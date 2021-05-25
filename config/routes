@@ -4,10 +4,12 @@
 /robots.txt RobotsR GET
 
 / HomeR GET 
-/p1 Page1R GET
-/p2 Page2R GET
+/p1 Pagina1R GET
+/p2 Pagina2R GET
+/p3 Pagina3R GET
+/p4 Pagina4R GET
+/p5 Pagina5R GET
 
-/soma/n1/#Int/n2/#Int SomaR GET
 /cliente ClienteR GET POST
 /cliente/perfil/#ClienteId PerfilR GET
 /clientes ListaCliR GET

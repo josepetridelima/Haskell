@@ -10,9 +10,9 @@ import Import
 
 getSomaR :: Int -> Int -> Handler Html
 getSomaR n1 n2 = do
-    defaultLayout $ do 
-        res <- return (n1+n2) 
+    defaultLayout $ do
+        res <- return (n1+n2)
         [whamlet|
-           <h1>
-                A SOMA EH: #{res}
-        |]  
+            <h1>
+                A SOMA E': #{res}
+        |]
