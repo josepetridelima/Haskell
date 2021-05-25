@@ -1,0 +1,25 @@
+<table>
+    <thead>
+        <th>
+            Cliente
+        <th>
+            Produto
+        <th>
+            Data
+        <th>
+            Valor
+        <th>
+    <tbody>
+        $forall Entity cid venda <- vendas
+            <tr>
+                <td>
+                    #{vendaCliente venda}
+                <td>
+                    #{vendaProduto venda}
+                <td>
+                    #{vendaData venda}
+                <td>
+                    #{vendaValor venda}
+                <td>
+                    <form method=post action=@{ApagarVendR cid}>
+                        <input type="submit" value="X">

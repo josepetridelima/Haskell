@@ -1,0 +1,20 @@
+Cliente
+    nome Text
+    cpf Text
+    idade Int
+    endereco Text
+    deriving Show
+
+Produto
+    nome Text
+    cod Text
+    peso Int
+    volume Int
+    deriving Show
+
+Venda
+    cliente Text
+    produto Text
+    data Int
+    valor Int
+    deriving Show

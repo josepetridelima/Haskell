@@ -1,0 +1,24 @@
+/static StaticR Static appStatic
+
+/favicon.ico FaviconR GET
+/robots.txt RobotsR GET
+
+/ HomeR GET 
+/p1 Page1R GET
+/p2 Page2R GET
+
+/soma/n1/#Int/n2/#Int SomaR GET
+/cliente ClienteR GET POST
+/cliente/perfil/#ClienteId PerfilR GET
+/clientes ListaCliR GET
+/cliente/apagar/#ClienteId ApagarCliR POST
+
+/produto ProdutoR GET POST
+/produto/perfil/#ProdutoId PerfilProdR GET
+/produtos ListaProR GET
+/produto/apagar/#ProdutoId ApagarProR POST
+
+/venda VendaR GET POST
+/venda/perfil/#VendaId PerfilVendR GET
+/vendas ListaVendR GET
+/venda/apagar/#VendaId ApagarVendR POST
