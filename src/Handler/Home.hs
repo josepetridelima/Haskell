@@ -20,9 +20,9 @@ getPage1R = do
     defaultLayout $ do
         [whamlet|
             <h1>
-                PAGINA 0
-
-            <img src=@{StaticR img_logo_png}>        
+                <a href="/clientes">Visualizar e excluir Cliente</a>
+                <a href="/produtos">Visualizar e excluir Produto</a>
+                <a href="/vendas">Visualizar e excluir Venda</a>
         |] 
 
 getPage2R :: Handler Html
@@ -30,7 +30,9 @@ getPage2R = do
     defaultLayout $ do
         [whamlet|
             <h1>
-                PAGINA 2
+                <a href="/cliente">Cadastrar Cliente</a>
+                <a href="/produto">Cadastrar Produto</a>
+                <a href="/venda">Cadastrar Venda</a>
         |] 
 
 -- Monad Handler => Back-end

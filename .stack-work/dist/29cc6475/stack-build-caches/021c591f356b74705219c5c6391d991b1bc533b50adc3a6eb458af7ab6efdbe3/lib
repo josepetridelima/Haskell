@@ -1,0 +1,58 @@
+C:\Users\josepetri\projetos\yesodvazio\src\Handler\Venda.hs:
+  hash: 426f75d21abef06dacdfd63623c4e4b0ffbaa73ffa48611c4257ab72812a325c
+C:\Users\josepetri\projetos\yesodvazio\config\robots.txt:
+  hash: 7e28fc38624619b8f8046d91f5085e8565055d0feb27af2ebb8df20b9f6f5060
+C:\Users\josepetri\projetos\yesodvazio\config\routes:
+  hash: 973261a9fe7ab5f3756522c8a4d01bfecda8bc6dd39636e2ecc3c13388bea977
+C:\Users\josepetri\projetos\yesodvazio\templates\produtos.hamlet:
+  hash: b4e9497acff969c0f642479b944172d165cb4c46a3da7fc05ddb187b0e76fd80
+C:\Users\josepetri\projetos\yesodvazio\.stack-work\dist\29cc6475\build\autogen\cabal_macros.h:
+  hash: b4986640f9cedf9fad746a9918cbb874ab67c44dd2e49ba2f9b4dde4eb257c0b
+C:\Users\josepetri\projetos\yesodvazio\src\Import.hs:
+  hash: cbb5e147e8b0d300e678aeed69fd48c040286f33c1bf98267eef11171943de55
+C:\Users\josepetri\projetos\yesodvazio\templates\vendas.hamlet:
+  hash: b997ff54bc1ed67123bc58d5d01dc4789c006dde2a6f3f95dc79301c3397382d
+C:\Users\josepetri\projetos\yesodvazio\src\Handler\Home.hs:
+  hash: bb6a5403ccbb7189f3b11cfa46db2b16318b4dcd0cfd38c9b90ec1a4bf2de5ae
+C:\Users\josepetri\projetos\yesodvazio\src\Import\NoFoundation.hs:
+  hash: 0ea0cd195d52cc53173482ef8bc283aacafe06895e4b4a87b8c58e7d52308663
+C:\Users\josepetri\projetos\yesodvazio\config\settings.yml:
+  hash: baa6a71eb5b783ba98ed15af9b727501e9fc8457a3d60f6584624bd0affd51c0
+C:\Users\josepetri\projetos\yesodvazio\src\Settings\StaticFiles.hs:
+  hash: 0afdb84a9dbe874f41986518915d649ee4034374b74da113af679766da3264f8
+C:\Users\josepetri\projetos\yesodvazio\templates\clientes.hamlet:
+  hash: ac7bdc866c46bc537c8e75348e827ef7b8117fdbcf60f72f5652e7a8a170fd85
+C:\Users\josepetri\projetos\yesodvazio\templates\home.hamlet:
+  hash: 026c8b8f85829c8c26a97e461d8a30f66505333d40b7d769369157d080196d39
+C:\Users\josepetri\AppData\Local\Programs\stack\x86_64-windows\ghc-8.8.4\lib\include\ghcversion.h:
+  hash: 297e8571427d670d413977834f5cdfc77cb89051d2f5b8302303c442346d15d0
+C:\Users\josepetri\projetos\yesodvazio\config\favicon.ico:
+  hash: 26f64af57709ca371fe68e50a5d915661e4aa017748983906d57d00f7fc3f748
+C:\Users\josepetri\projetos\yesodvazio\src\Handler\Calculos.hs:
+  hash: 761311e3aaae680ebec24461c0c6610a6baed7f15f5374b76740574feb7446d8
+C:\Users\josepetri\projetos\yesodvazio\src\Model.hs:
+  hash: d2788bfc0fd286bb229d99fd71805826c53db206fe31573712860b44623d3188
+C:\Users\josepetri\projetos\yesodvazio\src\Application.hs:
+  hash: bc1a929f0693b5079c225a2ffbc21d4e599845e9e0d39ba7c8b337296de37312
+C:\Users\josepetri\projetos\yesodvazio\src\Settings.hs:
+  hash: ded88c52cc9077a13ed9839cc65d5668dc56c5de9b7991d35604d819cfd17cd8
+C:\Users\josepetri\projetos\yesodvazio\aulahaskell.cabal:
+  hash: 3a33ac3870b9b0c0de33a5eda94c6a778ba4622282a87ca7a879109cac5c51b1
+C:\Users\josepetri\projetos\yesodvazio\templates\home.lucius:
+  hash: a85273bf62c89d729a8b96ec633211585a977f677a8e47531f335dac5bf79544
+C:\Users\josepetri\projetos\yesodvazio\src\Handler\Cliente.hs:
+  hash: f1e98708a8eb4a0f7b562754058082fcca87977afda06958ff6fe446cdb3c17f
+C:\Users\josepetri\projetos\yesodvazio\src\Handler\Produto.hs:
+  hash: 08de6f8e3e601b5c484ff08de5222127954ed8df520e904cb0c30dc1c0fa5f79
+C:\Users\josepetri\projetos\yesodvazio\src\Foundation.hs:
+  hash: a3fbe6b9be706b235b0afab3249b63ee35e540d731588937487c386505d06c0a
+C:\Users\josepetri\projetos\yesodvazio\package.yaml:
+  hash: 021fa3319fdcf84ac38872fd4c0ae6e13e819e381f6cdb547aa9947bfb0fa27f
+C:\Users\josepetri\projetos\yesodvazio\.stack-work\dist\29cc6475\build\autogen\Paths_aulahaskell.hs:
+  hash: 389c90286be3cd1046d477c6a6a6628f9bc9535fd46e63cf31813895ba239797
+C:\Users\josepetri\projetos\yesodvazio\config\models:
+  hash: 78debcd631b7af4246e461a2ceb8635eeada9890d08aa27d580f348e5befb173
+C:\Users\josepetri\projetos\yesodvazio\templates\home.julius:
+  hash: 358e184a0855916c87f884122d897b1bf3b3c0269a12d58446cdd1832d039157
+C:\Users\josepetri\projetos\yesodvazio\src\Handler\Common.hs:
+  hash: 95a811532352cbad27bcb239d6b729fed51f85c1632e0458a82da68732c8ef47
